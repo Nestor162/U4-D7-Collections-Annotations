@@ -2,6 +2,7 @@ package app;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 
 public class Exercise2 {
@@ -9,7 +10,7 @@ public class Exercise2 {
 	public static void main(String[] args) {
 		firstFunc();
 
-		ArrayList<Integer> list3 = new ArrayList<>();
+		List<Integer> list3 = new ArrayList<>();
 		for (int i = 1; i <= 9; i++) {
 			list3.add(i);
 		}
@@ -29,7 +30,7 @@ public class Exercise2 {
 		int nElements = sc.nextInt();
 		sc.nextLine();
 
-		ArrayList<Integer> list1 = new ArrayList<>();
+		List<Integer> list1 = new ArrayList<>();
 
 		for (int i = 1; i <= nElements; i++) {
 			int randomNumber = (int) Math.floor(Math.random() * 100);
@@ -43,10 +44,10 @@ public class Exercise2 {
 
 	}
 
-	public static void secondFunc(ArrayList<Integer> list1) {
+	public static void secondFunc(List<Integer> list1) {
 
-		ArrayList<Integer> list1Reverse = new ArrayList<>();
-		ArrayList<Integer> list2 = new ArrayList<>();
+		List<Integer> list1Reverse = new ArrayList<>();
+		List<Integer> list2 = new ArrayList<>();
 
 		list2.addAll(list1);
 		list1Reverse.addAll(list1);
@@ -56,10 +57,10 @@ public class Exercise2 {
 		System.out.println(list2);
 	}
 
-	public static void thirdFunc(ArrayList<Integer> list3, boolean odd) {
+	public static void thirdFunc(List<Integer> list3, boolean odd) {
 
-		ArrayList<Integer> listOdd = new ArrayList<>();
-		ArrayList<Integer> listEven = new ArrayList<>();
+		List<Integer> listOdd = new ArrayList<>();
+		List<Integer> listEven = new ArrayList<>();
 
 		for (int i = 0; i < list3.size(); i++) {
 			if (i % 2 == 0) {
